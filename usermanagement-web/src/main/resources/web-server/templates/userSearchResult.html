@@ -1,0 +1,39 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head></head>
+
+<body>
+	<h2>USER SEARCH RESULT</h2>
+
+
+	<table>
+		<tr>
+			<th>USER_ID</th>
+			<th>FIRSTNAME</th>
+			<th>LASTNAME</th>
+			<th>AGE</th>
+			<th>Email</th>
+		</tr>
+
+
+	<tr>
+		<td><dd th:text="${user.id}"></dd></td>
+		<td><dd th:text="${user.firstName}"></dd></td>
+		<td><dd th:text="${user.lastName}"></dd></td>
+		<td><dd th:text="${user.age}"></dd></td>
+		<td><dd th:text="${user.email}"></dd></td>
+	</tr>
+
+	<tr th:each="user : ${users}">
+		<td><dd th:text="${user.id}"></dd></td>
+		<td><dd th:text="${user.firstName}"></dd></td>
+		<td><dd th:text="${user.lastName}"></dd></td>
+		<td><dd th:text="${user.age}"></dd></td>
+		<td><dd th:text="${user.email}"></dd></td>
+	</tr>
+
+	</table>
+</body>
+</html>

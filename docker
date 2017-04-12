@@ -1,0 +1,24 @@
+https://hub.docker.com/r/mysql/mysql-server/
+
+
+Mysqldb password : my
+
+CREATE DATABASE casestudy;
+
+docker pull santoshkrjha09/casestudy
+
+docker build -t santoshkrjha09/casestudy
+docker rmi santoshkrjha09/casestudy
+
+docker build -t alexandreesl/microservices-spring-boot-base .
+
+docker build -t skumarjha09/microservices-spring-boot-base .
+docker rmi skumarjha09/microservices-spring-boot-base
+docker pull skumarjha09/microservices-spring-boot-base
+
+docker push skumarjha09/microservices-spring-boot-base
+
+
+https://cloud.docker.com/app/santoshkrjha09/repository/create
+https://docs.docker.com/
+https://spring.io/guides/gs/spring-boot-docker/

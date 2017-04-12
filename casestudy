@@ -1,0 +1,65 @@
+http://viralpatel.net/blogs/spring-4-mvc-rest-example-json/
+http://howtocookmicroservices.com/communication/
+http://www.3pillarglobal.com/insights/rabbitmq-understanding-message-broker
+http://javabeat.net/sending-and-receiving-messages-using-springs-amqp/
+http://javabeat.net/spring-boot-testing/
+https://blog.decaresystems.ie/2006/04/07/difficult-choices-in-handling-exceptions-in-enterprise-java-applications/
+https://docs.spring.io/spring/docs/current/spring-framework-reference/html/jdbc.html
+
+http://www.concretepage.com/spring/spring-mvc/spring-mvc-controlleradvice-annotation-example
+http://www.journaldev.com/2651/spring-mvc-exception-handling-controlleradvice-exceptionhandler-handlerexceptionresolver
+http://www.baeldung.com/exception-handling-for-rest-with-spring
+
+
+
+@TODO
+=======
+Code formatter
+Logger
+Add db constraint
+
+
+http://localhost:15672/
+rabbitmq-plugins.bat enable rabbitmq_management
+
+
+
+
+
+JSON DATA and Content type for rest service testing
+
+RBMQ: http://localhost:15672/#/
+
+Create User (post): 
+
+http://localhost:2223/user/
+
+content type : application/json
+
+{
+"firstName" : "firstNameTest",
+"lastName" : "lastName",
+"age" : 25,
+"email" : "santoshk.jha@impetus.co.in"
+}
+
+Delete User (Delete):
+http://localhost:8080/user/16
+
+Update User (Put):
+http://localhost:8080/user/16
+
+http://localhost:8080/user/
+http://localhost:8080/user/id/{id}
+http://localhost:8080/user/firstName/{firstName}
+http://localhost:8080/user/lastName/lastName
+http://localhost:8080/user/email/santoshk.jha@impetus.co.in/
+
+
+
+
+@ControllerAdvice
+@ExceptionHandler
+
+
+The Branch Manager

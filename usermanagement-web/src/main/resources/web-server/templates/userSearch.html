@@ -1,0 +1,33 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head></head>
+
+<body>
+	<h1>User Search</h1>
+
+	<p>Enter Firstname to search users:</p>
+
+	<form action="#" method="GET" th:object="${userobj}" th:action="@{/user/searchUserResult}"
+		class="form-horizontal">
+
+<table>
+		<tr>
+			<td><label for="number" class="control-label col-xs-2">FirstName</label></td>
+			<td>
+
+				<input type="text" class="form-control" th:field="*{firstName}"
+					placeholder="Enter First Name" style="width: 10em;" />
+			</td></tr>
+			
+		<!--  Submit button -->
+		<tr><td>
+			
+				<button type="submit" class="btn btn-primary">Find</button>
+			
+		</td></tr>
+</table>
+	</form>
+</body>
+</html>
